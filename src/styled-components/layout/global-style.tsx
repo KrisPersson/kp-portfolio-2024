@@ -44,6 +44,7 @@ body {
   ${H1},
   ${H2},
   ${H3},
+  ${H4},
   ${Subheading},
   ${Paragraph} {
     margin: 0;
@@ -86,7 +87,6 @@ body {
     }
   }
 
-
   .slide {
     animation: slide linear forwards;
     animation-timeline: view();
@@ -98,6 +98,5 @@ body {
     animation-timeline: view();
     animation-range: 0vh 40vh;
   }
- 
 
 `;
