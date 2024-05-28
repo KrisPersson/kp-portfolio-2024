@@ -47,7 +47,7 @@ const Card = styled.article<{ $label?: string }>`
   flex-direction: column;
   justify-content: space-between;
   gap: ${size(1.5)};
-  padding: ${size(6)};
+  padding: ${size(3)};
   position: relative;
 
   &::before {
