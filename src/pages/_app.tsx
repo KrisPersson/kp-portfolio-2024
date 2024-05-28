@@ -5,7 +5,6 @@ import GlobalStyle from "../styled-components/layout/global-style";
 import theme from "../styled-components/layout/theme";
 import StaticSideBar from "@/styled-components/components/StaticSideBar/index";
 import Head from "next/head";
-import StyledComponentsRegistry from "../lib/registry";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -15,14 +14,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </Head>
-      <StyledComponentsRegistry>
-        <ThemeProvider theme={theme}>
-          <GlobalStyle theme={theme} />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle theme={theme} />
 
-          <StaticSideBar />
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </StyledComponentsRegistry>
+        <StaticSideBar />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 }

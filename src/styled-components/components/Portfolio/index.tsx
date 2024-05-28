@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   position: relative;
   margin-inline: var(--ignore-gutter);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(${size(48.5)}, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(${size(35.5)}, 1fr));
   gap: 4px;
   margin-top: ${size(6)};
 `;

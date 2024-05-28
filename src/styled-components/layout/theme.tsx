@@ -31,11 +31,11 @@ export const theme = {
     size: {
       xsmall: "0.875rem",
       small: "1rem",
-      regular: "1.25rem",
-      large: "1.5rem",
-      xlarge: "1.75rem",
-      xxlarge: "2rem",
-      xxxlarge: "4rem",
+      regular: "1rem",
+      large: "1.25rem",
+      xlarge: "1.5rem",
+      xxlarge: "1.75rem",
+      xxxlarge: "3.5rem",
     },
   },
   size: {
