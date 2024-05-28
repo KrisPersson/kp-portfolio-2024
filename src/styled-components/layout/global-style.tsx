@@ -44,7 +44,6 @@ body {
   ${H1},
   ${H2},
   ${H3},
-  ${H4},
   ${Subheading},
   ${Paragraph} {
     margin: 0;
@@ -65,5 +64,40 @@ body {
     src: local("DM Sans"), url("/fonts/DMSans_24pt-Medium.ttf") format('truetype');
   }
 
+  @keyframes reveal {
+    from {
+      opacity: 0;
+
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide {
+    from {
+      opacity: 0;
+      transform: translateX(10vw);
+
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+  .slide {
+    animation: slide linear forwards;
+    animation-timeline: view();
+    animation-range: 0vh 40vh;
+  }
+
+  .reveal {
+    animation: reveal linear forwards;
+    animation-timeline: view();
+    animation-range: 0vh 40vh;
+  }
+ 
 
 `;

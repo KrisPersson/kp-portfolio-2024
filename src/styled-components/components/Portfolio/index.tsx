@@ -12,6 +12,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(${size(35.5)}, 1fr));
   gap: 4px;
+  padding-inline: 4px;
   margin-top: ${size(6)};
 `;
 
@@ -45,7 +46,7 @@ const Card = styled.article<{ $label?: string }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: ${size(3)};
+  gap: ${size(1.5)};
   padding: ${size(6)};
   position: relative;
 
