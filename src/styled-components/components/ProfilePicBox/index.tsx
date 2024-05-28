@@ -31,7 +31,7 @@ type ProfilePicBoxProps = {
 export default function ProfilePicBox({ imgSrc }: ProfilePicBoxProps) {
   return (
     <Wrapper>
-      <StyledImg src={imgSrc} fill />
+      <StyledImg src={imgSrc} fill alt="Profile picture of Kristofer" />
     </Wrapper>
   );
 }
