@@ -4,9 +4,9 @@ import { size } from "../../layout/helpers";
 
 const Wrapper = styled.div<{ $color?: string; $background?: string }>`
   color: ${(props) =>
-    props.theme.colors[props.$color] || props.theme.colors.black};
+    props.theme.colors[`${props.$color}`] || props.theme.colors.black};
   background: ${(props) =>
-    props.theme.colors[props.$background] || props.theme.colors.white};
+    props.theme.colors[`${props.$background}`] || props.theme.colors.white};
   position: sticky;
   top: 0;
   min-height: 50vh;
