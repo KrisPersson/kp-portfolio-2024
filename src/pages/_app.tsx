@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <StyledComponentsRegistry>
         <ThemeProvider theme={theme}>
-          <GlobalStyle />
+          <GlobalStyle theme={theme} />
 
           <StaticSideBar />
           <Component {...pageProps} />
