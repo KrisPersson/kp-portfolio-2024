@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { Theme, theme } from "./theme";
 import { size } from "./helpers";
-import { H1, H2, H3 } from "../components/Heading/index";
+import { H1, H2, H3, H4 } from "../components/Heading/index";
 import { Subheading, Paragraph } from "../components/Paragraph/index";
 
 export default createGlobalStyle<{ theme: Theme }>`
@@ -16,7 +16,8 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: "DM Sans";
-  --gutter: ${size(10)};
+  --gutter: ${size(4)};
+  --ignore-gutter: calc(var(--gutter) * -1);
   --content-max-width: ${size(100)};
 
   ${theme.breakpoint.Lg} {
@@ -43,6 +44,7 @@ body {
   ${H1},
   ${H2},
   ${H3},
+  ${H4},
   ${Subheading},
   ${Paragraph} {
     margin: 0;

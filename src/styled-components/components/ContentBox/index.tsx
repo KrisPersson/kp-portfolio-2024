@@ -15,8 +15,8 @@ const Wrapper = styled.div<{ $color?: string; $background?: string }>`
 const Inner = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${size(4)};
-  padding-block: var(--gutter);
+  gap: ${size(3.25)};
+  padding-block: ${size(12)};
 `;
 
 export default function ContentBox({

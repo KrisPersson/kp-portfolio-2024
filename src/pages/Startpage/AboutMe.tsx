@@ -10,7 +10,7 @@ import ContentBox from "../../styled-components/components/ContentBox/index";
 export default function AboutMe() {
   return (
     <>
-      <ContentBox color="white" background="primaryDefault">
+      <ContentBox color="secondaryDefault" background="primaryDefault">
         <H2>About Me</H2>
         <Subheading>
           I enjoy working closely with design teams to faithfully translate
@@ -30,7 +30,7 @@ export default function AboutMe() {
       </ContentBox>
       <ContentBox color="black" background="white">
         <H3 $color="black">Background</H3>
-        <Paragraph $color="black">
+        <Paragraph $color="black" style={{ marginBottom: "52px" }}>
           I am 37, grew up in Gävle, currently living in Gothenburg. I lived in
           Los Angeles for 11 years where I studied and worked as a musician.
           During the pandemic I decided I wanted to make a career-switch to

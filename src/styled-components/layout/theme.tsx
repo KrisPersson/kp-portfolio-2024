@@ -12,8 +12,8 @@ export const theme = {
     darkGrey: "rgba(92, 92, 92, 1)",
     grey: "rgba(217, 217, 217, 1)",
     primaryDarker: "rgba(29, 75, 94, 1)",
-    primaryDefault: "rgba(37, 150, 186, 1)",
-    secondaryDefault: "rgba(29, 31, 74, 1)",
+    primaryDefault: "rgba(46, 197, 207, 1)",
+    secondaryDefault: "rgba(34, 36, 66, 1)",
     white: "rgba(249, 249, 249, 1)",
   },
   font: {
@@ -29,6 +29,7 @@ export const theme = {
       alt: 1.4,
     },
     size: {
+      xsmall: "0.875rem",
       small: "1rem",
       regular: "1.25rem",
       large: "1.5rem",

@@ -31,7 +31,7 @@ type ProfilePicBoxProps = {
 export default function ProfilePicBox({ imgSrc }: ProfilePicBoxProps) {
   return (
     <Wrapper>
-      <StyledImg src={imgSrc} fill fetchPriority="high" />
+      <StyledImg src={imgSrc} fill fetchpriority="high" />
     </Wrapper>
   );
 }

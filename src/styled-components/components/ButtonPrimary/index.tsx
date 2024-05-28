@@ -12,4 +12,8 @@ export const ButtonPrimary = styled(ButtonReset)`
   max-width: fit-content;
   white-space: nowrap;
   box-shadow: 2px 2px 40px rgba(40, 40, 40, 0.1);
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;

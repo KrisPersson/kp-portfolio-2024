@@ -4,7 +4,7 @@ import Page from "../styled-components/components/Page/index";
 import ProfilePicBox from "../styled-components/components/ProfilePicBox/index";
 import PageSection from "../styled-components/components/PageSection/index";
 import AboutMe from "./Startpage/AboutMe";
-import Portfolio from "./Startpage/Portfolio";
+import PortfolioSection from "./Startpage/Portfolio";
 
 import { styled } from "styled-components";
 
@@ -32,12 +32,11 @@ export default function Home() {
       <Page>
         <ProfilePicBox imgSrc="/profil-kp_3.jpg" />
         <ProfilePicBox imgSrc="/profil-kp_3_bw.jpg" />
-
         <FillerBox />
         <Foreground>
           <PageSection>
             <AboutMe />
-            <Portfolio />
+            <PortfolioSection />
           </PageSection>
         </Foreground>
       </Page>
