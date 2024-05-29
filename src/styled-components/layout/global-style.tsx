@@ -16,7 +16,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: "DM Sans";
-  --gutter: ${size(4)};
+  --gutter: ${size(5)};
   --ignore-gutter: calc(var(--gutter) * -1);
   --content-max-width: ${size(100)};
 
@@ -35,10 +35,16 @@ body {
   }
 
   #__next {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
     max-height: 100vh;
     min-width: 100%;
+
+    ${theme.breakpoint.Md} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+      
+    
+    };
   }
 
   ${H1},

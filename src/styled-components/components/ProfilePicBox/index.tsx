@@ -3,9 +3,11 @@ import { size } from "../../layout/helpers";
 import Image from "next/image";
 
 const Wrapper = styled.div`
-  width: 25vw;
-  height: 25vw;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  height: 100vw;
+
   &::after {
     content: "";
     inset: 0px;
@@ -15,7 +17,29 @@ const Wrapper = styled.div`
   }
 
   & + & {
-    transform: translateX(25vw);
+    display: none;
+  }
+  ${(props) => props.theme.breakpoint.Sm} {
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+
+    & + & {
+      display: block;
+      position: absolute;
+      right: 0;
+    }
+  }
+  ${(props) => props.theme.breakpoint.Md} {
+    width: 25vw;
+    height: 25vw;
+    position: fixed;
+    & + & {
+      transform: translateX(25vw);
+      position: fixed;
+      top: 0;
+      right: unset;
+    }
   }
 `;
 

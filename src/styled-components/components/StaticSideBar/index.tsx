@@ -17,12 +17,7 @@ const SubHeading = styled.div`
 const Wrapper = styled.section`
   background-color: ${(props) => props.theme.colors.secondaryDefault};
   grid-column: 1 / span 1;
-  max-width: 50vw;
-  min-width: 50vw;
-
-  position: fixed;
-  left: 0;
-  top: 0;
+  position: sticky;
 
   ${H1} {
     grid-row: 2 / span 1;
@@ -30,6 +25,14 @@ const Wrapper = styled.section`
   ${Content} {
     grid-row: 3 / span 1;
     max-width: 50ch;
+  }
+
+  ${(props) => props.theme.breakpoint.Md} {
+    position: fixed;
+    left: 0;
+    top: 0;
+    max-width: 50vw;
+    min-width: 50vw;
   }
 `;
 
