@@ -18,6 +18,7 @@ const Wrapper = styled.section`
   background-color: ${(props) => props.theme.colors.secondaryDefault};
   grid-column: 1 / span 1;
   position: sticky;
+  min-height: 120vh;
 
   ${H1} {
     grid-row: 2 / span 1;
@@ -52,7 +53,7 @@ const TopLinks = styled.div`
   left: ${size(5)};
   top: ${size(5)};
   display: flex;
-  gap: ${size(2)};
+  gap: ${size(2.5)};
 `;
 
 export default function StaticSideBar() {
@@ -81,6 +82,7 @@ export default function StaticSideBar() {
       <ButtonPrimary
         $size={"xsmall"}
         style={{ position: "absolute", right: size(5), top: size(5) }}
+        title="Download CV"
         onClick={() =>
           handleDownload("/kristoferpersson-cv.pdf", "KristoferPerssonCV.pdf")
         }
@@ -96,6 +98,7 @@ export default function StaticSideBar() {
           </SubHeading>
           <ButtonPrimary
             onClick={() => handleClick("mailto:krisperssonmusic@gmail.com")}
+            title="Send me an email!"
           >
             Let’s work together!
           </ButtonPrimary>

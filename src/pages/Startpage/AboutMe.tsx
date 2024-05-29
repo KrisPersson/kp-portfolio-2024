@@ -10,7 +10,13 @@ import ContentBox from "../../styled-components/components/ContentBox/index";
 export default function AboutMe() {
   return (
     <>
-      <ContentBox color="secondaryDefault" background="primaryDefault" reveal>
+      <ContentBox
+        id="about-me"
+        aria-label="About me"
+        color="secondaryDefault"
+        background="primaryDefault"
+        reveal
+      >
         <H2>About Me</H2>
         <Subheading>
           I enjoy working closely with design teams to faithfully translate
@@ -28,7 +34,13 @@ export default function AboutMe() {
           seamless as possible.
         </Paragraph>
       </ContentBox>
-      <ContentBox color="black" background="white" slide>
+      <ContentBox
+        id="background"
+        aria-label="Background"
+        color="black"
+        background="white"
+        slide
+      >
         <H3 $color="black">Background</H3>
         <Paragraph $color="black">
           I am 37, grew up in Gävle, currently living in Gothenburg. I lived in

@@ -25,15 +25,17 @@ export default function ContentBox({
   background,
   reveal,
   slide,
+  id,
 }: {
   children: React.ReactNode;
   color: string;
   background: string;
   reveal?: boolean;
   slide?: boolean;
+  id: string;
 }) {
   return (
-    <Wrapper $color={color} $background={background}>
+    <Wrapper id={id} $color={color} $background={background}>
       <Container>
         <Inner className={`${reveal ? "reveal" : slide ? "slide" : ""}`}>
           {children}

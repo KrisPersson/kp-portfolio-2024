@@ -11,7 +11,13 @@ import Portfolio from "../../styled-components/components/Portfolio/index";
 export default function PortfolioSection() {
   return (
     <>
-      <ContentBox color="white" background="secondaryDefault" slide>
+      <ContentBox
+        id="portfolio"
+        aria-label="Portfolio"
+        color="white"
+        background="secondaryDefault"
+        slide
+      >
         <H2>Portfolio</H2>
         <Subheading>
           Here is a collection of projects I have been working on recently. They
