@@ -1,5 +1,6 @@
 export const theme = {
   breakpoint: {
+    LtXsm: "@media (max-width: 370px)",
     Sm: "@media (min-width: 600px)",
     LtSm: "@media (max-width: 599px)",
     Md: "@media (min-width: 900px)",

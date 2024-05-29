@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
-import { size } from "../../layout/helpers";
 
 type IconLinkProps = {
   hrefSrc: string;
@@ -18,7 +17,7 @@ const Icon = styled(Image)``;
 export default function IconLink({ hrefSrc, imgSrc }: IconLinkProps) {
   return (
     <Wrapper href={hrefSrc} target="_blank">
-      <Icon src={`/icons/${imgSrc}.svg`} width={35} height={35} alt="logo" />
+      <Icon src={`/icons/${imgSrc}.svg`} width={48} height={48} alt="logo" />
     </Wrapper>
   );
 }

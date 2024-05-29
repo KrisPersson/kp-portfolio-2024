@@ -20,6 +20,12 @@ html {
   --ignore-gutter: calc(var(--gutter) * -1);
   --content-max-width: ${size(100)};
 
+  ${theme.breakpoint.LtXsm} {
+  --gutter: ${size(1.5)};
+
+  }
+
+
   ${theme.breakpoint.Lg} {
   --gutter: ${size(15)};
   };

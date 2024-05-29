@@ -54,6 +54,9 @@ const TopLinks = styled.div`
   top: ${size(5)};
   display: flex;
   gap: ${size(2.5)};
+  ${(props) => props.theme.breakpoint.LtXsm} {
+    left: ${size(1.5)};
+  }
 `;
 
 export default function StaticSideBar() {
@@ -81,7 +84,7 @@ export default function StaticSideBar() {
       </TopLinks>
       <ButtonPrimary
         $size={"xsmall"}
-        style={{ position: "absolute", right: size(5), top: size(5) }}
+        style={{ position: "absolute", top: size(5) }}
         title="Download CV"
         onClick={() =>
           handleDownload("/kristoferpersson-cv.pdf", "KristoferPerssonCV.pdf")
