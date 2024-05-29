@@ -64,11 +64,13 @@ const Card = styled.article<{ $label?: string }>`
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: reveal 125ms forwards;
   }
   &:hover::before {
-    opacity: 0;
-    visibility: none;
-    z-index: -1;
+    animation-name: card;
+    animation-duration: 125ms;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
   }
   &:hover::${LinkItem} {
     z-index: 2;

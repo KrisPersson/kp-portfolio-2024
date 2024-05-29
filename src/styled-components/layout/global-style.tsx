@@ -22,7 +22,6 @@ html {
 
   ${theme.breakpoint.Lg} {
   --gutter: ${size(15)};
-
   };
   
 }
@@ -40,10 +39,8 @@ body {
     min-width: 100%;
 
     ${theme.breakpoint.Md} {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-      
-    
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     };
   }
 
@@ -74,7 +71,6 @@ body {
   @keyframes reveal {
     from {
       opacity: 0;
-
     }
     to {
       opacity: 1;
@@ -85,11 +81,31 @@ body {
     from {
       opacity: 0;
       transform: translateX(10vw);
-
     }
     to {
       opacity: 1;
       transform: translateX(0);
+    }
+  }
+
+  @keyframes card {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      z-index: -1;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes button {
+    from {
+      opacity: 1;
+    } to {
+      opacity: 0.7;
     }
   }
 
@@ -104,5 +120,7 @@ body {
     animation-timeline: view();
     animation-range: 0vh 40vh;
   }
+
+
 
 `;

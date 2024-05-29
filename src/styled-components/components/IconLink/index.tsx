@@ -10,7 +10,7 @@ type IconLinkProps = {
 
 const Wrapper = styled(Link)`
   &:hover {
-    opacity: 0.7;
+    animation: button 100ms forwards;
   }
 `;
 const Icon = styled(Image)``;
