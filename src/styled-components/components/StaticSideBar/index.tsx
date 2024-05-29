@@ -71,7 +71,7 @@ export default function StaticSideBar() {
   }
 
   return (
-    <Wrapper>
+    <Wrapper aria-label="Sidebar">
       <TopLinks>
         <IconLink hrefSrc="https://github.com/KrisPersson" imgSrc="github" />
         <IconLink
