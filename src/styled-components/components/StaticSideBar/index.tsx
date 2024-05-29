@@ -53,6 +53,19 @@ const TopLinks = styled.div`
 `;
 
 export default function StaticSideBar() {
+  function handleClick(href: string) {
+    window.location.href = href;
+  }
+
+  function handleDownload(url: string, fileName: string) {
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <Wrapper>
       <TopLinks>
@@ -62,6 +75,15 @@ export default function StaticSideBar() {
           imgSrc="linkedin"
         />
       </TopLinks>
+      <ButtonPrimary
+        $size={"xsmall"}
+        style={{ position: "absolute", right: size(5), top: size(4) }}
+        onClick={() =>
+          handleDownload("/kristoferpersson-cv.pdf", "KristoferPerssonCV.pdf")
+        }
+      >
+        Download CV
+      </ButtonPrimary>
       <Inner>
         <H1 $color="primaryDefault">Web Developer</H1>
         <Content>
@@ -69,13 +91,10 @@ export default function StaticSideBar() {
             My name is Kristofer. I build websites using modern Front-End
             technologies like NextJS and React.
           </SubHeading>
-          <ButtonPrimary>
-            <a
-              style={{ textDecoration: "none", color: "currentColor" }}
-              href="mailto:krisperssonmusic@gmail.com"
-            >
-              Let’s work together!
-            </a>
+          <ButtonPrimary
+            onClick={() => handleClick("mailto:krisperssonmusic@gmail.com")}
+          >
+            Let’s work together!
           </ButtonPrimary>
         </Content>
       </Inner>
