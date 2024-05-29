@@ -10,9 +10,13 @@ import { styled } from "styled-components";
 
 const FillerBox = styled.div`
   width: 50vw;
-  height: calc(100vh - 50vw);
   background: ${(props) => props.theme.colors.primaryDefault};
-  margin-top: 50vw;
+  display: none;
+  ${(props) => props.theme.breakpoint.Md} {
+    height: calc(100vh - 50vw);
+    margin-top: 50vw;
+    display: block;
+  }
 `;
 
 const Foreground = styled.div`
