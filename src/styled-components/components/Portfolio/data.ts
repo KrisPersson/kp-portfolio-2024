@@ -23,19 +23,7 @@ export const PORTFOLIO: PortfolioItem[] = [
         description: "User interface for an online-market selling and buying used cars. React, Linaria CSS, TypeScript.",
         hrefUi: "https://wayke-elbil.vercel.app/elbil",
         hrefCode: "https://github.com/KrisPersson/wayke-eval-linaria"
-    },
-    {
-        label: "Interval",
-        description: "A simple timer-app. React, Sass, TypeScript.",
-        hrefUi: "https://kp-interval.netlify.app/",
-        hrefCode: "https://github.com/KrisPersson/interval-app"
-    },
-    {
-        label: "E-Wallet",
-        description: "A simple E-wallet design. React, JavaScript.",
-        hrefUi: "https://kp-e-wallet.netlify.app/",
-        hrefCode: "https://github.com/KrisPersson/yhjs-react-5.1-e-wallet"
-    },
+    }
 ]
 
 export type PortfolioItem = {
