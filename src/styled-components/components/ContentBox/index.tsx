@@ -16,7 +16,11 @@ const Inner = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${size(3.25)};
-  padding-block: ${size(12)};
+  padding-block: ${size(6)};
+
+  ${(props) => props.theme.breakpoint.Md} {
+    padding-block: ${size(12)};
+  }
 `;
 
 export default function ContentBox({
