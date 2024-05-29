@@ -36,7 +36,7 @@ export default function Home() {
       <Page>
         <ProfilePicBox imgSrc="/profil-kp_3.jpg" />
         <ProfilePicBox imgSrc="/profil-kp_3_bw.jpg" />
-        <FillerBox />
+        <FillerBox aria-hidden />
         <Foreground>
           <PageSection>
             <AboutMe />
