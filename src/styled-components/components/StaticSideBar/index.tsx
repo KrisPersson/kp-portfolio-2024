@@ -77,7 +77,7 @@ export default function StaticSideBar() {
       </TopLinks>
       <ButtonPrimary
         $size={"xsmall"}
-        style={{ position: "absolute", right: size(5), top: size(4) }}
+        style={{ position: "absolute", right: size(5), top: size(5) }}
         onClick={() =>
           handleDownload("/kristoferpersson-cv.pdf", "KristoferPerssonCV.pdf")
         }
