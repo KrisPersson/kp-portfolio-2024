@@ -47,7 +47,7 @@ const Card = styled.article<{ $label?: string }>`
   flex-direction: column;
   justify-content: space-between;
   gap: ${size(1.5)};
-  padding: ${size(3)};
+  padding: ${size(5)};
   position: relative;
 
   &::before {
@@ -72,10 +72,6 @@ const Card = styled.article<{ $label?: string }>`
   }
   &:hover::${LinkItem} {
     z-index: 2;
-  }
-
-  ${(props) => props.theme.breakpoint.Lg} {
-    padding: ${size(6)};
   }
 `;
 
