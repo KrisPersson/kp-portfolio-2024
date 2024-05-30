@@ -19,19 +19,16 @@ export default function AboutMe() {
       >
         <H2>About Me</H2>
         <Subheading>
-          I enjoy working closely with design teams to faithfully translate
-          their designs down to the last pixel. Daily, I use modern front-end
-          technologies that bring the creative process to life, just as
-          designers intended them to be.
+          I build websites from start to finish - from design, to front-end, to
+          back-end, using modern full-stack technology and architecture.
         </Subheading>
         <H3>Technical</H3>
         <Paragraph>
-          I primarily use front-end frameworks like React/NextJS and
-          style-solutions like Sass, Styled Components, CSS Modules, and
-          CSS-in-JS. I love problem-solving generally, and as part of my
-          internship I built a Figma-plugin that exports full designs to
-          CSS/Sass-variables and/or JS-themes to make the UX-FE transitions as
-          seamless as possible.
+          I primarily use front-end frameworks like React/NextJS and back-end
+          cloud solutions with NodeJS and AWS/Serverless. I love to solve
+          problems generally, and as part of my internship I built a
+          Figma-plugin that exports full designs to CSS/Sass-variables and/or
+          JS-themes to make the UX-FE transitions as seamless as possible.
         </Paragraph>
       </ContentBox>
       <ContentBox
@@ -43,12 +40,17 @@ export default function AboutMe() {
       >
         <H3 $color="black">Background</H3>
         <Paragraph $color="black">
-          I am 37, grew up in Gävle, currently living in Gothenburg. I lived in
-          Los Angeles for 11 years where I studied and worked as a musician.
-          During the pandemic I decided I wanted to make a career-switch to
-          development, and I am currently finishing up my studies at
-          Folkuniversitetet’s Javascript-Developer program, as well as my
-          internship at OurStudio. Drop me an email for references!
+          I am 37, grew up in Gävle, Sweden. Via Los Angeles and a career in
+          music, I now live in Gothenburg I am currently finishing up my studies
+          at Folkuniversitetet’s Javascript-Developer program, as well as my
+          internship at OurStudio.{" "}
+          <a
+            style={{ color: "currentColor" }}
+            href="mailto:krisperssonmusic@gmail.com"
+          >
+            Drop me an email
+          </a>{" "}
+          for references!
         </Paragraph>
         <H3 $color="black">Personal</H3>
         <Paragraph $color="black">

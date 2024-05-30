@@ -18,11 +18,10 @@ html {
   font-family: "DM Sans";
   --gutter: ${size(5)};
   --ignore-gutter: calc(var(--gutter) * -1);
-  --content-max-width: ${size(100)};
+  --content-max-width: ${size(70)};
 
   ${theme.breakpoint.LtXsm} {
-  --gutter: ${size(1.5)};
-
+    --gutter: ${size(1.5)};
   }
 
 

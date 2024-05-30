@@ -96,7 +96,7 @@ export default function StaticSideBar() {
         <H1 $color="primaryDefault">Web Developer</H1>
         <Content>
           <SubHeading>
-            My name is Kristofer. I build websites using modern Front-End
+            My name is Kristofer. I build websites using modern Front-end
             technologies like NextJS and React.
           </SubHeading>
           <ButtonPrimary

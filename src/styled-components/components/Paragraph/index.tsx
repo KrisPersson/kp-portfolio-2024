@@ -14,6 +14,6 @@ export const Paragraph = styled.p<{ $color?: string }>`
   font-weight: ${(props) => props.theme.font.weight.regular};
   font-size: ${(props) => props.theme.font.size.regular};
   letter-spacing: 0.8px;
-  max-width: 60ch;
+  max-width: var(--content-max-width);
   padding-bottom: 20px;
 `;
