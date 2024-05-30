@@ -7,6 +7,7 @@ export const theme = {
     LtMd: "@media (max-width: 899px)",
     Lg: "@media (min-width: 1200px)",
     LtLg: "@media (max-width: 1199px)",
+    Xlg: "@media (min-width: 1700px)",
   },
   colors: {
     black: "rgba(16, 16, 16, 1)",

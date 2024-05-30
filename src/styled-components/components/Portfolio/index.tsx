@@ -13,7 +13,10 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(${size(35.5)}, 1fr));
   gap: 4px;
   padding-inline: 4px;
-  margin-top: ${size(6)};
+  margin-block: ${size(6)};
+  ${(props) => props.theme.breakpoint.Xlg} {
+    margin-inline: unset;
+  }
 `;
 
 const LinkItem = styled(Link).attrs((props) => ({

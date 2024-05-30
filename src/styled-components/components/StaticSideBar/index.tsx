@@ -96,8 +96,8 @@ export default function StaticSideBar() {
         <H1 $color="primaryDefault">Web Developer</H1>
         <Content>
           <SubHeading>
-            My name is Kristofer. I build websites using modern Front-end
-            technologies like NextJS and React.
+            My name is Kristofer. I build websites using modern Full-stack
+            technologies like NextJS/React and NodeJS.
           </SubHeading>
           <ButtonPrimary
             onClick={() => handleClick("mailto:krisperssonmusic@gmail.com")}

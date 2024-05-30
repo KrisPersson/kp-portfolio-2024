@@ -25,11 +25,9 @@ html {
     --gutter: ${size(1.5)};
   }
 
-
   ${theme.breakpoint.Lg} {
   --gutter: ${size(15)};
   };
-  
 }
 
 body {

@@ -7,6 +7,8 @@ import {
 } from "../../styled-components/components/Paragraph/index";
 import ContentBox from "../../styled-components/components/ContentBox/index";
 import Portfolio from "../../styled-components/components/Portfolio/index";
+import Skills from "../../styled-components/components/Skills/index";
+import { SKILLS } from "../../styled-components/components/Skills/data";
 
 export default function PortfolioSection() {
   return (
@@ -25,6 +27,8 @@ export default function PortfolioSection() {
           are all based on essentially HTML, CSS, and Javascript at the core.
         </Subheading>
         <Portfolio />
+        <H3>Skills / Tools</H3>
+        <Skills skillsData={SKILLS} />
       </ContentBox>
     </>
   );

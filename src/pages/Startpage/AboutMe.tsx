@@ -40,10 +40,10 @@ export default function AboutMe() {
       >
         <H3 $color="black">Background</H3>
         <Paragraph $color="black">
-          I am 37, grew up in Gävle, Sweden. Via Los Angeles and a career in
-          music, I now live in Gothenburg I am currently finishing up my studies
-          at Folkuniversitetet’s Javascript-Developer program, as well as my
-          internship at OurStudio.{" "}
+          I am 37, grew up in Gävle, Sweden. Via Los Angeles and a decade-long
+          career in music, I now live in Gothenburg where I have recently
+          graduated from my studies at Folkuniversitetet’s Javascript-Developer
+          program, as well as my internship at OurStudio.{" "}
           <a
             style={{ color: "currentColor" }}
             href="mailto:krisperssonmusic@gmail.com"
