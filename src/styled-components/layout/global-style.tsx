@@ -37,6 +37,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     width: 100vw;
+    overflow-x: hidden;
   }
 
   #__next {
