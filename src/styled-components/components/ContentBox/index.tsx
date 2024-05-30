@@ -9,7 +9,7 @@ const Wrapper = styled.div<{ $color?: string; $background?: string }>`
     props.theme.colors[`${props.$background}`] || props.theme.colors.white};
   position: sticky;
   top: 0;
-  min-height: 50vh;
+  min-height: 100vh;
 `;
 
 const Inner = styled.div`
