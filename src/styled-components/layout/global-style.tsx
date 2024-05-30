@@ -16,6 +16,7 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: "DM Sans";
+  background: ${theme.colors.secondaryDefault};
   --gutter: ${size(5)};
   --ignore-gutter: calc(var(--gutter) * -1);
   --content-max-width: ${size(70)};
