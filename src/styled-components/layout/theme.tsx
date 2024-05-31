@@ -17,6 +17,7 @@ export const theme = {
     primaryDefault: "rgba(46, 197, 207, 1)",
     secondaryDefault: "rgba(34, 36, 66, 1)",
     tertiaryDefault: "rgba(152, 203, 45, 1)",
+    tertiaryDarker: "rgba(91, 121, 27, 1)",
     white: "rgba(249, 249, 249, 1)",
   },
   font: {

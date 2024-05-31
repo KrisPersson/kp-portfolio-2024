@@ -6,6 +6,7 @@ import {
   Paragraph,
 } from "../../styled-components/components/Paragraph/index";
 import ContentBox from "../../styled-components/components/ContentBox/index";
+import { AnchorLink } from "../../styled-components/components/AnchorLink/index";
 
 export default function AboutMe() {
   return (
@@ -44,12 +45,9 @@ export default function AboutMe() {
           career in music, I now live in Gothenburg where I have recently
           graduated from my studies at Folkuniversitetet’s Javascript-Developer
           program, as well as my internship at OurStudio.{" "}
-          <a
-            style={{ color: "currentColor" }}
-            href="mailto:krisperssonmusic@gmail.com"
-          >
+          <AnchorLink href="mailto:krisperssonmusic@gmail.com">
             Drop me an email
-          </a>{" "}
+          </AnchorLink>{" "}
           for references!
         </Paragraph>
         <H3 $color="black">Personal</H3>
