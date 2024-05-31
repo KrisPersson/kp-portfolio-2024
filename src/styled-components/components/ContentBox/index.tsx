@@ -17,7 +17,7 @@ const Inner = styled.div`
   padding-block: ${size(3)};
 
   ${(props) => props.theme.breakpoint.Md} {
-    padding-block: ${size(6)};
+    padding-block: ${size(9)};
   }
 `;
 

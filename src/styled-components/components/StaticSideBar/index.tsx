@@ -19,6 +19,7 @@ const Wrapper = styled.section`
   grid-column: 1 / span 1;
   position: sticky;
   min-height: 120vh;
+  overflow-y: scroll;
 
   ${H1} {
     grid-row: 2 / span 1;
