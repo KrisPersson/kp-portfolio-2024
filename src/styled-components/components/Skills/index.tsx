@@ -6,16 +6,17 @@ import { TSkill } from "./data";
 const Wrapper = styled.div`
   padding-inline: 4px;
   margin-block: ${size(6)};
+  ${(props) => props.theme.breakpoint.Lg} {
+    padding-inline: unset;
+  }
 `;
 
 const Inner = styled.div`
-  border: 2px solid ${(props) => props.theme.colors.white};
   background: ${(props) => props.theme.colors.white};
   border-radius: ${size(1.75)};
   padding: ${size(6)} ${size(4)};
   margin-inline: var(--ignore-gutter);
 
-  box-shadow: inset rgba(0, 0, 0, 0.35) 4px 4px 30px;
   ${(props) => props.theme.breakpoint.Lg} {
     margin-inline: unset;
   }

@@ -17,7 +17,7 @@ const Icon = styled(Image)``;
 export default function IconLink({ hrefSrc, imgSrc }: IconLinkProps) {
   return (
     <Wrapper href={hrefSrc} target="_blank">
-      <Icon src={`/icons/${imgSrc}.svg`} width={48} height={48} alt="logo" />
+      <Icon src={`/icons/${imgSrc}_w.svg`} width={35} height={35} alt="logo" />
     </Wrapper>
   );
 }

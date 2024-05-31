@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { H1 } from "../Heading/index";
-import { ButtonPrimary } from "../ButtonPrimary/index";
+import { ButtonPrimary, ButtonSecondary } from "../ButtonPrimary/index";
 import { size } from "../../layout/helpers";
 import IconLink from "../IconLink/index";
 
@@ -82,7 +82,7 @@ export default function StaticSideBar() {
           imgSrc="linkedin"
         />
       </TopLinks>
-      <ButtonPrimary
+      <ButtonSecondary
         $size={"xsmall"}
         style={{ position: "absolute", top: size(5) }}
         title="Download CV"
@@ -91,7 +91,7 @@ export default function StaticSideBar() {
         }
       >
         Download CV
-      </ButtonPrimary>
+      </ButtonSecondary>
       <Inner>
         <H1 $color="primaryDefault">Web Developer</H1>
         <Content>

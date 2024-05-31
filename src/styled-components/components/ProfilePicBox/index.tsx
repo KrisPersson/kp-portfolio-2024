@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     content: "";
     inset: 0px;
     background: ${(props) => props.theme.colors.primaryDefault};
-    opacity: 0.35;
+    opacity: 0.25;
     position: absolute;
   }
 

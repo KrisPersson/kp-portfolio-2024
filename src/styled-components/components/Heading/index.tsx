@@ -5,6 +5,7 @@ export const H1 = styled.h1<{ $color?: string }>`
   font-weight: ${(props) => props.theme.font.weight.medium};
   font-size: ${(props) => props.theme.font.size.xxxlarge};
   letter-spacing: 3.84px;
+  line-height: 1.2;
 `;
 
 export const H2 = styled.h2<{ $color?: string }>`
