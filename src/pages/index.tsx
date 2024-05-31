@@ -13,8 +13,8 @@ const FillerBox = styled.div`
   background: ${(props) => props.theme.colors.primaryDefault};
   display: none;
   ${(props) => props.theme.breakpoint.Md} {
-    height: calc(100vh - 50vw);
-    margin-top: 50vw;
+    height: 0;
+    margin-top: 25vw;
     display: block;
   }
 `;

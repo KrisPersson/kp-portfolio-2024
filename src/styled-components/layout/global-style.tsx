@@ -55,7 +55,6 @@ body {
   ${H4},
   ${Subheading},
   ${Paragraph} {
-    margin: 0;
     max-width: var(--content-max-width);
   }
 

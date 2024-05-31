@@ -13,13 +13,11 @@ const Wrapper = styled.div<{ $color?: string; $background?: string }>`
 `;
 
 const Inner = styled.div`
-  display: flex;
-  flex-direction: column;
   gap: ${size(3.25)};
-  padding-block: ${size(6)};
+  padding-block: ${size(3)};
 
   ${(props) => props.theme.breakpoint.Md} {
-    padding-block: ${size(12)};
+    padding-block: ${size(6)};
   }
 `;
 

@@ -6,7 +6,7 @@ export const Subheading = styled.p<{ $color?: string }>`
   font-size: ${(props) => props.theme.font.size.large};
   letter-spacing: 1.2px;
   line-height: ${(props) => props.theme.font.lineHeight.alt};
-  padding-bottom: 20px;
+  margin-block: 0.5em 2em;
 `;
 
 export const Paragraph = styled.p<{ $color?: string }>`
@@ -15,5 +15,5 @@ export const Paragraph = styled.p<{ $color?: string }>`
   font-size: ${(props) => props.theme.font.size.regular};
   letter-spacing: 0.8px;
   max-width: var(--content-max-width);
-  padding-bottom: 20px;
+  margin-block: 0.5em 2em;
 `;
