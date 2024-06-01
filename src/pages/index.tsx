@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Kristofer Persson Portfolio</title>
+        <title>Kristofer Persson | krispersson.se</title>
         <meta name="description" content="Front-end portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

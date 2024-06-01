@@ -13,6 +13,7 @@ const SubHeading = styled.div`
   font-size: ${(props) => props.theme.font.size.large};
   color: ${(props) => props.theme.colors.white};
   letter-spacing: 1.2px;
+  max-width: 32ch;
 `;
 const Wrapper = styled.section`
   background-color: ${(props) => props.theme.colors.secondaryDefault};
@@ -26,7 +27,6 @@ const Wrapper = styled.section`
   }
   ${Content} {
     grid-row: 3 / span 1;
-    max-width: 50ch;
   }
 
   ${(props) => props.theme.breakpoint.Md} {

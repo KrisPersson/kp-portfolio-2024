@@ -21,7 +21,7 @@ export default function AboutMe() {
         <H2>About Me</H2>
         <Subheading>
           I build websites from start to finish - from design, to front-end, to
-          back-end, using modern full-stack technology and architecture.
+          back-end, using modern full-stack technologies and architecture.
         </Subheading>
         <H3>Technical</H3>
         <Paragraph>
