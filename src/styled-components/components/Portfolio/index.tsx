@@ -52,32 +52,6 @@ const Card = styled.article<{ $label?: string }>`
   gap: ${size(1.5)};
   padding: ${size(5)};
   position: relative;
-
-  &::before {
-    content: "${(props) => props.$label || ""}";
-    inset: 0px;
-    background: ${(props) => props.theme.colors.grey};
-    font-size: ${(props) => props.theme.font.size.regular};
-    color: currentColor;
-    opacity: 1;
-    visibility: visible;
-    font-weight: ${(props) => props.theme.font.weight.medium};
-    letter-spacing: 1px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: reveal 125ms forwards;
-  }
-  &:hover::before {
-    animation-name: card;
-    animation-duration: 125ms;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-  }
-  &:hover::${LinkItem} {
-    z-index: 2;
-  }
 `;
 
 const Description = styled(Paragraph)`
