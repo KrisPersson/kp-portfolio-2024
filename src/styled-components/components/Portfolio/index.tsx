@@ -129,11 +129,13 @@ export default function Portfolio({ portfolio }: PortfolioProps) {
                 src={`/photos/portfolio/${item.mockImgName}_desktop.png`}
                 width={251}
                 height={155}
+                alt={`Desktop screenshot of ${item.label}.`}
               />
               <MockDeviceMobile
                 src={`/photos/portfolio/${item.mockImgName}_mobile.png`}
                 width={75}
                 height={141}
+                alt={`Mobile screenshot of ${item.label}.`}
               />
             </MockDeviceContainer>
           )}
