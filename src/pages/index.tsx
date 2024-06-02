@@ -34,8 +34,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Page>
-        <ProfilePicBox imgSrc="/profil-kp_3.jpg" />
-        <ProfilePicBox imgSrc="/profil-kp_3_bw.jpg" />
+        <ProfilePicBox imgSrc="/photos/profile/profil-kp_3.jpg" />
+        <ProfilePicBox imgSrc="/photos/profile/profil-kp_3_bw.jpg" />
         <FillerBox aria-hidden />
         <Foreground>
           <PageSection>
