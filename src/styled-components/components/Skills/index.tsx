@@ -23,11 +23,13 @@ const Inner = styled.div`
 `;
 
 const List = styled.ul`
+  grid-template-columns: repeat(auto-fit, 50px);
   list-style: none;
   padding-left: 0;
   margin: 0;
-  display: flex;
+  display: grid;
   flex-flow: row wrap;
+  justify-content: space-evenly;
   gap: ${size(4)};
 `;
 

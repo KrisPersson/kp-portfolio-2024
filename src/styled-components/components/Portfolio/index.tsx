@@ -39,15 +39,18 @@ const LinkItem = styled(Link).attrs((props) => ({
   gap: ${size(1)};
   cursor: pointer;
   flex: 1 1 100%;
-  font-size: ${(props) => props.theme.font.size.regular};
+  font-size: ${(props) => props.theme.font.size.large};
   font-weight: ${(props) => props.theme.font.weight.medium};
   color: ${(props) => props.theme.colors.black};
   text-decoration: none;
   vertical-align: bottom;
   align-items: flex-end;
-
+  opacity: 0.7;
   &:hover {
-    opacity: 0.7;
+    opacity: 0.5;
+  }
+  &:active {
+    opacity: 0.9;
   }
 `;
 
@@ -70,7 +73,7 @@ const Card = styled.article<{ $label?: string }>`
   container-type: inline-size;
 
   ${(props) => props.theme.breakpoint.Md} {
-    padding-inline: ${size(5)};
+    padding-inline: ${size(4)};
   }
 `;
 
@@ -144,11 +147,11 @@ export default function Portfolio({ portfolio }: PortfolioProps) {
         </DescImgWrapper>
         <LinksWrapper>
           <LinkItem href={item.hrefUi}>
-            <Browser size={32} color="currentColor" />
+            <Browser size={35} color="currentColor" />
             UI
           </LinkItem>
           <LinkItem href={item.hrefCode}>
-            <FileCode size={32} color="currentColor" />
+            <FileCode size={35} color="currentColor" />
             Code
           </LinkItem>
         </LinksWrapper>
