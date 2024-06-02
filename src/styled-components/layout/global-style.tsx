@@ -20,13 +20,14 @@ html {
   --gutter: ${size(5)};
   --ignore-gutter: calc(var(--gutter) * -1);
   --content-max-width: ${size(70)};
+  --mock-dev-offset: ${size(6)};
 
   ${theme.breakpoint.LtXsm} {
     --gutter: ${size(1.5)};
   }
 
   ${theme.breakpoint.Lg} {
-  --gutter: ${size(15)};
+    --gutter: ${size(15)};
   };
 }
 

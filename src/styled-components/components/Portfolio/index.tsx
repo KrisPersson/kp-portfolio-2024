@@ -4,18 +4,31 @@ import { PORTFOLIO, PortfolioItem } from "./data";
 import { H4 } from "../Heading/index";
 import { Paragraph } from "../Paragraph/index";
 import Link from "next/link";
+import Image from "next/image";
 import { Browser, FileCode } from "@phosphor-icons/react";
+
+const DescImgWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @container (min-width: 475px) {
+    flex-direction: row;
+  }
+`;
 
 const Wrapper = styled.div`
   position: relative;
   margin-inline: var(--ignore-gutter);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(${size(35.5)}, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(${size(44)}, 1fr));
   gap: 4px;
   padding-inline: 4px;
   margin-block: ${size(6)};
   ${(props) => props.theme.breakpoint.Xlg} {
     margin-inline: unset;
+  }
+  ${(props) => props.theme.breakpoint.LtXsm} {
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -39,19 +52,26 @@ const LinkItem = styled(Link).attrs((props) => ({
 `;
 
 const Title = styled(H4)`
-  font-size: ${(props) => props.theme.font.size.regular};
+  font-size: ${(props) => props.theme.font.size.large};
+  margin-top: 0;
+  margin-bottom: ${size(3)};
 `;
 
 const Card = styled.article<{ $label?: string }>`
   min-height: ${size(37.5)};
   background: ${(props) => props.theme.colors.white};
   color: ${(props) => props.theme.colors.black};
+  gap: ${size(1.5)};
+  padding-inline: var(--gutter);
+  padding-block: ${size(4)};
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: ${size(1.5)};
-  padding: ${size(5)};
-  position: relative;
+  container-type: inline-size;
+
+  ${(props) => props.theme.breakpoint.Md} {
+    padding-inline: ${size(5)};
+  }
 `;
 
 const Description = styled(Paragraph)`
@@ -64,6 +84,32 @@ const Description = styled(Paragraph)`
 
 const LinksWrapper = styled.div`
   display: flex;
+  margin-top: auto;
+`;
+
+const MockDeviceMobile = styled(Image)`
+  position: absolute;
+  top: var(--mock-dev-offset);
+  left: 0;
+  margin-bottom: 0;
+`;
+
+const MockDeviceDesktop = styled(Image)`
+  object-fit: contain;
+  margin-bottom: 0;
+  margin-inline: auto;
+`;
+
+const MockDeviceContainer = styled.div`
+  position: relative;
+  align-self: center;
+  min-width: 295px;
+  max-width: 295px;
+  display: flex;
+  margin-bottom: var(--mock-dev-offset);
+  ${(props) => props.theme.breakpoint.LtXsm} {
+    min-width: 280px;
+  }
 `;
 
 type PortfolioProps = {
@@ -76,7 +122,24 @@ export default function Portfolio({ portfolio }: PortfolioProps) {
     return (
       <Card $label={item.label} key={i}>
         <Title>{item.label}</Title>
-        <Description>{item.description}</Description>
+        <DescImgWrapper>
+          {item.mockImgName && (
+            <MockDeviceContainer>
+              <MockDeviceDesktop
+                src={`/photos/portfolio/${item.mockImgName}_desktop.png`}
+                width={251}
+                height={155}
+              />
+              <MockDeviceMobile
+                src={`/photos/portfolio/${item.mockImgName}_mobile.png`}
+                width={75}
+                height={141}
+              />
+            </MockDeviceContainer>
+          )}
+
+          <Description>{item.description}</Description>
+        </DescImgWrapper>
         <LinksWrapper>
           <LinkItem href={item.hrefUi}>
             <Browser size={32} color="currentColor" />
