@@ -10,7 +10,6 @@ import { Browser, FileCode } from "@phosphor-icons/react";
 const DescImgWrapper = styled.div`
   display: flex;
   flex-direction: column;
-
   @container (min-width: 475px) {
     flex-direction: row;
   }
@@ -110,6 +109,8 @@ const MockDeviceContainer = styled.div`
   max-width: 295px;
   display: flex;
   margin-bottom: var(--mock-dev-offset);
+  cursor: pointer;
+
   ${(props) => props.theme.breakpoint.LtXsm} {
     min-width: 280px;
   }
@@ -119,15 +120,25 @@ type PortfolioProps = {
   portfolio?: PortfolioItem[];
 };
 
+function handleClickMockup(url: string) {
+  const link = document.createElement("a");
+  link.href = url;
+  link.setAttribute("target", "_blank");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
 export default function Portfolio({ portfolio }: PortfolioProps) {
   const source = portfolio || PORTFOLIO;
+
   const items = source.map((item, i) => {
     return (
       <Card $label={item.label} key={i}>
         <Title>{item.label}</Title>
         <DescImgWrapper>
           {item.mockImgName && (
-            <MockDeviceContainer>
+            <MockDeviceContainer onClick={() => handleClickMockup(item.hrefUi)}>
               <MockDeviceDesktop
                 src={`/photos/portfolio/${item.mockImgName}_desktop.png`}
                 width={251}
