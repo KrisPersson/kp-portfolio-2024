@@ -45,7 +45,7 @@ export default function AboutMe() {
           career in music, I now live in Gothenburg where I have recently
           graduated from my studies at Folkuniversitetet’s Javascript-Developer
           program, as well as my internship at OurStudio.{" "}
-          <AnchorLink href="mailto:krisperssonmusic@gmail.com">
+          <AnchorLink href="mailto:contact@krispersson.se">
             Drop me an email
           </AnchorLink>{" "}
           for references!
