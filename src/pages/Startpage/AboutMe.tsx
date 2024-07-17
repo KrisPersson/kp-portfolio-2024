@@ -29,7 +29,11 @@ export default function AboutMe() {
           cloud solutions with NodeJS and AWS/Serverless. I love to solve
           problems generally, and as part of my internship I built a
           Figma-plugin that exports full designs to CSS/Sass-variables and/or
-          JS-themes to make the UX-FE transitions as seamless as possible.
+          JS-themes to make the UX-FE transitions as seamless as possible. Check
+          out my{" "}
+          <AnchorLink style={{ color: "currentColor" }} href="#portfolio">
+            portfolio!
+          </AnchorLink>{" "}
         </Paragraph>
       </ContentBox>
       <ContentBox
