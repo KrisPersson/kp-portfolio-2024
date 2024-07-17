@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-const StyledPage = styled.main`
+const StyledPage = styled.div`
   position: relative;
   grid-column: 2 / -1;
   display: flex;

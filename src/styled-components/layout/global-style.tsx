@@ -40,10 +40,16 @@ body {
   }
 
   #__next {
-    display: block;
     max-height: 100vh;
     min-width: 100%;
 
+    
+  }
+
+  main {
+  display: block;
+    max-height: 100vh;
+    min-width: 100%;
     ${theme.breakpoint.Md} {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -126,6 +132,11 @@ body {
     animation-range: 0vh 40vh;
   }
 
-
+  body.loading {
+    overflow: hidden;
+  }
+  body.loading main {
+    display: none;
+  }
 
 `;
