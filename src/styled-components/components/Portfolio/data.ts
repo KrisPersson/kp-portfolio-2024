@@ -3,7 +3,7 @@ export const PORTFOLIO: PortfolioItem[] = [
     label: "Chatter",
     description:
       "Full-stack Chat app built with React, Typescript, Node, Express, MongoDb, Socket.io, Amazon Web Services, Redux, and Styled Components.",
-    hrefUi: "https://chatter.se",
+    hrefUi: "https://github.com/KrisPersson/chatter",
     hrefCode: "https://github.com/KrisPersson/chatter",
     mockImgName: "chatter",
   },
